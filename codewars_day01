@@ -1,0 +1,8 @@
+1. 利用filter方法，根据某些验证得到最终的数组
+getEvenNumbers([2,4,5,6]) // should == [2,4,6]
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter(function(i){
+    return (i & 1) == 0;
+  });
+}
+
